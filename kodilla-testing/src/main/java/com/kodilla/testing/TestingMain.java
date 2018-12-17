@@ -23,7 +23,12 @@ public class TestingMain {
         int add = calculator.add(5, 4);
         int sub = calculator.substract(10, 5);
 
-        System.out.println("Add: " + add + " Substract: " + sub);
+        if (add == 9 && sub == 5){
+            System.out.println("Test OK");
+        } else {
+            System.out.println("Error!");
+        }
+
 
 
     }
