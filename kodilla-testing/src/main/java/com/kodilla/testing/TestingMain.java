@@ -16,7 +16,7 @@ public class TestingMain {
             System.out.println("Error!");
         }
 
-        // *** Kolejny test ***
+        // *** Calculator test ***
 
         Calculator calculator = new Calculator();
 
