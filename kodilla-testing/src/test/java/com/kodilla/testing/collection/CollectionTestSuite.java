@@ -29,10 +29,10 @@ public class CollectionTestSuite {
         OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
         ArrayList<Integer> list = new ArrayList<>();
         //When
-        ArrayList<Integer> resultsList = oddNumbersExterminator.exterminate(list);
-        System.out.println("Testing list " + resultsList);
+        ArrayList<Integer> numberList = oddNumbersExterminator.exterminate(list);
+        System.out.println("Testing list " + numberList);
         //Then
-        Assert.assertEquals(0, resultsList.size());
+        Assert.assertEquals(0, numberList.size());
     }
 
     @Test
@@ -41,12 +41,22 @@ public class CollectionTestSuite {
         OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
         ArrayList<Integer> list = new ArrayList<>();
         //When
-        ArrayList<Integer> resultsList = oddNumbersExterminator.exterminate(list);
-        for (int i = 0; i < 50; i++){
-            resultsList.add(i);
-        }
-        System.out.println("Testing list: " + resultsList);
+        ArrayList<Integer> numberList = oddNumbersExterminator.exterminate(list);
+            numberList.add(0);
+            numberList.add(1);
+            numberList.add(2);
+            numberList.add(3);
+            numberList.add(4);
+            numberList.add(5);
+            numberList.add(6);
+            numberList.add(7);
+            numberList.add(8);
+            numberList.add(9);
+            numberList.add(10);
+
+        System.out.println("Testing list: " + numberList);
         //Then
-        Assert.assertNotEquals(oddNumbersExterminator.exterminate(resultsList), resultsList);
+        ArrayList<Integer> evenList = oddNumbersExterminator.exterminate(numberList);
+        Assert.assertNotEquals(evenList, numberList);
     }
 }
