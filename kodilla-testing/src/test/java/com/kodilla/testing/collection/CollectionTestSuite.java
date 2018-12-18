@@ -57,15 +57,15 @@ public class CollectionTestSuite {
         System.out.println("Testing numberList: " + numberList);
         //Then
         ArrayList<Integer> checkList = new ArrayList<>();
-        checkList.add(0);
-        checkList.add(2);
-        checkList.add(4);
-        checkList.add(6);
-        checkList.add(8);
-        checkList.add(10);
+            checkList.add(0);
+            checkList.add(2);
+            checkList.add(4);
+            checkList.add(6);
+            checkList.add(8);
+            checkList.add(10);
 
         ArrayList<Integer> evenList = oddNumbersExterminator.exterminate(numberList);
 
-        Assert.assertEquals(evenList, checkList);
+        Assert.assertEquals(checkList,evenList);
     }
 }
