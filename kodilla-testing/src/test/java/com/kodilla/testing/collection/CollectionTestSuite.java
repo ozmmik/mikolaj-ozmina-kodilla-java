@@ -41,20 +41,20 @@ public class CollectionTestSuite {
         OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
         ArrayList<Integer> list = new ArrayList<>();
         //When
-        ArrayList<Integer> numberList = oddNumbersExterminator.exterminate(list);
-            numberList.add(0);
-            numberList.add(1);
-            numberList.add(2);
-            numberList.add(3);
-            numberList.add(4);
-            numberList.add(5);
-            numberList.add(6);
-            numberList.add(7);
-            numberList.add(8);
-            numberList.add(9);
-            numberList.add(10);
 
-        System.out.println("Testing numberList: " + numberList);
+            list.add(0);
+            list.add(1);
+            list.add(2);
+            list.add(3);
+            list.add(4);
+            list.add(5);
+            list.add(6);
+            list.add(7);
+            list.add(8);
+            list.add(9);
+            list.add(10);
+
+        System.out.println("Testing numberList: " + list);
         //Then
         ArrayList<Integer> checkList = new ArrayList<>();
             checkList.add(0);
@@ -64,7 +64,7 @@ public class CollectionTestSuite {
             checkList.add(8);
             checkList.add(10);
 
-        ArrayList<Integer> evenList = oddNumbersExterminator.exterminate(numberList);
+        ArrayList<Integer> evenList = oddNumbersExterminator.exterminate(list);
 
         Assert.assertEquals(checkList,evenList);
     }
