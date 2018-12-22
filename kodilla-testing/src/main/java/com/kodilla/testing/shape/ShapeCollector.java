@@ -10,14 +10,19 @@ public class ShapeCollector {
         shapeList.add(shape);
     }
 
-    public boolean removeFigure(Shape shape){
-        shapeList.remove(shape);
-        return true;
+    public boolean removeFigure(Shape shape) {
+        boolean result = false;
+        if (shapeList.contains(shape)) {
+            shapeList.remove(shape);
+            result = true;
+        }
+        return result;
     }
 
     public Shape getFigure(int n) {
         Shape check = null;
-        if (n >= 0) {
+
+        if (n >= 0 && n < shapeList.size()) {
             check = shapeList.get(n);
         }
         return check;
