@@ -72,4 +72,22 @@ public class ShapeCollectorTestSuite {
         //Then
             Assert.assertEquals(circle, result);
     }
+    @Test
+    public void testGetShapeList(){
+        //Givem
+            Square square = new Square(4);
+            Circle circle = new Circle(3);
+            Triangle triangle = new Triangle(3,4);
+            ShapeCollector shapeCollector = new ShapeCollector();
+
+        //When
+            shapeCollector.addFigure(square);
+            shapeCollector.addFigure(circle);
+            shapeCollector.addFigure(triangle);
+            System.out.println("Testing getShapeListSize");
+
+        //Then
+            int result = shapeCollector.getShapeListSize();
+            Assert.assertEquals(3,result);
+    }
 }
