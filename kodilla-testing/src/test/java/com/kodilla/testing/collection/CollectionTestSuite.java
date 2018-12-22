@@ -57,6 +57,7 @@ public class CollectionTestSuite {
         System.out.println("Testing numberList: " + list);
         //Then
         ArrayList<Integer> checkList = new ArrayList<>();
+
             checkList.add(0);
             checkList.add(2);
             checkList.add(4);
