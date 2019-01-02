@@ -142,7 +142,6 @@ public class StatisticsTestSuite {
         usersNames.add("user3");
         usersNames.add("user4");
         usersNames.add("user5");
-
         int postNumber = 1000;
         int commentsNumber = 500;
 
@@ -177,7 +176,6 @@ public class StatisticsTestSuite {
         usersNames.add("user3");
         usersNames.add("user4");
         usersNames.add("user5");
-
         int postNumber = 500;
         int commentsNumber = 1000;
 
@@ -207,7 +205,6 @@ public class StatisticsTestSuite {
         StatisticCalculator statisticCalculator = new StatisticCalculator();
 
         List<String> usersNames = new ArrayList<>();
-
         int postNumber = 1000;
         int commentsNumber = 500;
 
@@ -240,7 +237,6 @@ public class StatisticsTestSuite {
         for(int i = 0; i < 100; i++){
             usersNames.add("user" + i);
         }
-
         int postNumber = 1000;
         int commentsNumber = 500;
 

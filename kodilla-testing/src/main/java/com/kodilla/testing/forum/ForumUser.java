@@ -6,8 +6,8 @@ import java.util.LinkedList;
 public class ForumUser {
     private String name;
     private String realName;
-    private ArrayList<ForumPost> posts = new ArrayList<ForumPost>();
-    private LinkedList<ForumComment> comments = new LinkedList<ForumComment>();
+    private ArrayList<ForumPost> posts = new ArrayList<>();
+    private LinkedList<ForumComment> comments = new LinkedList<>();
 
     public ForumUser(String name, String realName) {
         this.name = name;
