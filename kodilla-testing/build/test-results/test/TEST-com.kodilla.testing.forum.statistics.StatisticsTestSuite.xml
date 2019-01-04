@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.StatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-01-03T16:43:25" hostname="ZenBook" time="0.221">
+  <properties/>
+  <testcase name="testCalculateAdvStatisticsCommentsLessThenPosts" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.212"/>
+  <testcase name="testCalculateAdvStatisticsUsers100" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsCommentsMoreThenPosts" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsPosts0" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsUsers0" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsPosts1000" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsComments0" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.002"/>
+  <system-out><![CDATA[Test Suite: begin
+Test Case: begin
+Testing comments < posts, comments: 500 posts: 1000
+Test Case: end
+Test Case: begin
+Testing users equal: 100
+Test Case: end
+Test Case: begin
+Testing comments > posts, comments: 1000 posts: 500
+Test Case: end
+Test Case: begin
+Testing posts: 0
+Test Case: end
+Test Case: begin
+Testing users equal: 0
+Test Case: end
+Test Case: begin
+Testing posts: 1000
+Test Case: end
+Test Case: begin
+Testing comments: 0
+Test Case: end
+Test Suite: end
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
